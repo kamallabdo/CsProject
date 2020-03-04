@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project2.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,18 @@ namespace Project2
     /// <summary>
     /// Logique d'interaction pour Statique.xaml
     /// </summary>
+
     public partial class Statique : UserControl
     {
+        
         public Statique()
         {
             InitializeComponent();
+            Series.ItemsSource = (new StatiqueModel()).Data;
+            Series.XBindingPath = "Nom";
+            Series.YBindingPath = "nEtudiant";
+            Series.ShowTooltip = true;
         }
+      
     }
 }

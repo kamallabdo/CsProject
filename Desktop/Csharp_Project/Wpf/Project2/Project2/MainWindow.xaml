@@ -17,7 +17,8 @@
             
         </DataTemplate>
         <DataTemplate x:Name="StatiqueTemplate" DataType="{x:Type models:StatiqueModel}">
-            <local:Gestionetudiant DataContext="{Binding}"/>
+            <local:Statique DataContext="{Binding}"/>
+        </DataTemplate>
     </Window.Resources>
 
     <Grid x:Name="Home" HorizontalAlignment="Left" Height="593.1" Margin="1.8,3.6,0,0" VerticalAlignment="Top" Width="807.6">
@@ -43,7 +44,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Statique" HorizontalAlignment="Left" Height="30.4" Margin="570.4,59.129,0,0" VerticalAlignment="Top" Width="150.4" Foreground="White" FontFamily="Snap ITC" FontSize="14" Grid.Column="1">
+        <Button Content="Statique" HorizontalAlignment="Left" Height="30.4" Margin="570.4,59.129,0,0" VerticalAlignment="Top" Width="150.4" Foreground="White" FontFamily="Snap ITC" FontSize="14" Grid.Column="1" Click="Statique">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="Black" Offset="0"/>

@@ -63,7 +63,9 @@ namespace Project2
                      join F in cl.Filiere
                       on E.id_fil equals F.Id_filiere
                       where F.Nom_filiere.Equals(filiereCombo.SelectedItem)
-                     select new {E.cne,E.nom,E.prenom,E.date_naiss,E.sexe,E.image_etud,F.Nom_filiere});
+                     select new {E.cne,E.nom,E.prenom,E.date_naiss,E.sexe,E.image,F.Nom_filiere});
+            
+
             DataEtudient.ItemsSource = x;
         }
 

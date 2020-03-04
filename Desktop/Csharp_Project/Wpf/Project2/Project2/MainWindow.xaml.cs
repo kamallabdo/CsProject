@@ -47,5 +47,9 @@ namespace Project2
             DataContext = new FiliereModel();
         }
 
+        private void Statique(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Statique();
+        }
     }
 }

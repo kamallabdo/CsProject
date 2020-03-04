@@ -20,6 +20,7 @@
             <Label Name="labResp" Content="Said ECh-Chadi" HorizontalAlignment="Left" Height="34.8" Margin="36,20.398,0,0" VerticalAlignment="Top" Width="114" FontSize="14" Grid.Row="1"/>
         </Grid>
         <DataGrid Name="DataEtudient" SelectionUnit="FullRow" HorizontalAlignment="Left" Height="296.8" Margin="246.3,41.1,0,0" VerticalAlignment="Top" Width="515.2" Background="#FFE0E0E0" SelectionChanged="DataEtudient_SelectionChanged"/>
+       
         <Label Content="Gènie Informatique" HorizontalAlignment="Left" Height="36" Margin="437.1,2.7,0,0" VerticalAlignment="Top" Width="176.4" Foreground="#FF253FCE" FontSize="18"/>
         <Button Content="Modifier" HorizontalAlignment="Left" Height="32.8" Margin="441.6,346.329,0,0" VerticalAlignment="Top" Width="136" Foreground="White" FontFamily="Snap ITC" FontSize="14"
              Click="Button_Click_1"  >
